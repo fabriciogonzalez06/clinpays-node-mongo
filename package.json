@@ -9,7 +9,7 @@
     "prod": "cross-env NODE_ENV=production nodemon dist/app.js",
     "tsc":"tsc",
     "heroku-prebuild":"npm i -g typescript",
-    "postinstall": " tsc && mv -i -v public dist/ && rm -v -rf src",
+    "postinstall": " tsc ",
     "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w"
   },
