@@ -1,0 +1,26 @@
+{
+  "name": "backend-climpays",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node dist/app.js",
+    "dev": "cross-env NODE_ENV=development nodemon dist/app.js",
+    "prod": "cross-env NODE_ENV=production nodemon dist/app.js",
+    "postinstall": "tsc && mv -i -v public dist/ && rm -v -rf src",
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.11",
+    "@types/mongoose": "^5.10.3",
+    "@types/node": "^14.14.32",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "mongoose": "^5.11.19"
+  },
+  "engines": { "node": "13.12.0" }
+}
