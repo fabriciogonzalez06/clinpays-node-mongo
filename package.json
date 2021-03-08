@@ -7,7 +7,8 @@
     "start":"node dist/app.js",
     "dev": "cross-env NODE_ENV=development nodemon dist/app.js",
     "prod": "cross-env NODE_ENV=production nodemon dist/app.js",
-    "postinstall": "tsc && mv -i -v public dist/ && rm -v -rf src",
+    "tsc":"tsc",
+    "postinstall": "npm run tsc && mv -i -v public dist/ && rm -v -rf src",
     "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w"
   },
