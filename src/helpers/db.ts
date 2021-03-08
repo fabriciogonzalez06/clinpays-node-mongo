@@ -1,8 +1,6 @@
 import mongoose from 'mongoose';
 
 
-// export const DB_URL:string='mongodb://127.0.0.1:27017/climpays' || 'mongodb+srv://clinpays:clinpays12345@clinpays.ryqz4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
-
 
 export const getDdUrl = (): string => {
 
